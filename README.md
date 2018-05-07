@@ -1,3 +1,3 @@
 # learnyounode
 
-### solutions to learnyounode challenges of node.io
+### solutions to learnyounode challenges from node.io
