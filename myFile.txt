@@ -1,0 +1,14 @@
+The solution is broken down into several lines for the sake of readability, 
+but we can cram the solution into a single line if we want to.  However, 
+this formatting may cause some to become nauseated, enraged, or both.  
+Use at your own risk.
+
+In my solution, I am getting the number of lines in my file with the
+getLines() function.  The getLines() function can receive a callback 
+as an argument.  Below, I am declaring two more functions called logLines()
+and magicNumber().  The logLines() function prints the number of lines in my
+file to the console, and the magicNumber() function allows me to pass a magic
+number as the fourth argument in the command line.  If my file has as many
+lines or more than my magic number, it tells me me that it has more as many
+or more lines.  If not, the function says my file does not have as many
+or more lines

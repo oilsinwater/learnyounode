@@ -3,12 +3,14 @@
 // call global file system module
 var fs = require ('fs');
 
-// declare a text variable and set it equal to fs reading global arguements variable
-var text = fs.readFileSync(process.argv[2]);
+// declare a text variable and set it equal to fsreadFileSync global arguments variable
+var lines = fs.readFileSync(process.argv[2]);
 
 // split the text sting using each \n, new-line, as a delimiter
-console.log(text.toString().split('\n').length - 1);
+let fileContents = lines.toString().split('\n').length - 1;
 
+// print to screen
+console.log(fileContents);
 
 
 
