@@ -1,7 +1,8 @@
-'use strict'
 
 // call global file system module
 var fs = require ('fs');
+
+// assign process.argv to file
 var file = process.argv[2];
 
 fs.readFile(file, function(err, contents) {

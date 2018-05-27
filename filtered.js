@@ -1,19 +1,17 @@
-'use strict'
-
-var fs = require('fs');
-var path = require('path');
-
-var folder = process.argv[2];
-var ext = '.' + process.argv[3];
+const fs = require('fs'); // importing fs module
+const path = require('path'); // importing path module
 
 
+exports.myModule = (folder, ext, callback) => {
+  folder = process.argv[2]; // assigns global variable to folder
+  ext = "." + process.argv[3]; // assigns a concatenated string to global variable
 
-fs.readdir(path, function (err, list) {
+  fs.readdir(folder, function(err, files) {
     if (err) return console.error(err);
-    list.forEach(function (file) {
-        if (path.extname(file) === ext {
-                console.log(file);
-            })
-    })
-})
-
+    files.forEach(function(file) {
+      if (path.extname(file) === ext) {
+        console.log(file);
+      }
+    });
+  });
+};

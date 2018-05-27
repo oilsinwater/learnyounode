@@ -1,4 +1,5 @@
-'use strict'
+// @ts-check
+
 
 // call global file system module
 var fs = require ('fs');
